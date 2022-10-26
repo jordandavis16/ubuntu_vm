@@ -8,5 +8,5 @@ rm -rf ~/miniconda/miniconda.sh
 source ~/miniconda/bin/activate
 sudo chown -R $USER:$USER ~/miniconda
 conda update -n base -c defaults conda -y
-conda config --set auto_activate_base true
 conda env create -f environment.yml
+python -m ipykernel install --user --name burial --display-name "burial"
